@@ -8,7 +8,7 @@ Constraints. 1 ≤ m ≤ 10^3
 Output Format. Output the minimum number of coins with denominations 1, 5, 10 that changes m.
 '''
 import sys
-entry_coin = int(input('Enter the amount of coin to be canged: '))
+entry_coin = int(input('Enter the amount of coin to be changed: '))
 
 '''
 num_10coin = entry_coin//10
