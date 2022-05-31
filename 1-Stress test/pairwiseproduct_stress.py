@@ -12,7 +12,7 @@ def pairwise_product_2 (t2):
         if num > max1: max1 = num
     for i in range(len(t2)):
         if  t2[i]>max2 and i != t2.index(max1) : max2 = t2[i]  # we have to use index as an itterator(i in range ...) because if we use element as an itterator(num in num_list) and use index method in if statement
-                                                                # in case of having duplicated number in the num_list index will return the first occerance of the elemnt that can be the same as max1 index
+                                                                # in case of having duplicated number in the num_list index will return the first occourance of the elemnt that can be the same as max1 index
     return max1*max2
 
 num_of_num = int(input('Please enter number of numbers: '))
