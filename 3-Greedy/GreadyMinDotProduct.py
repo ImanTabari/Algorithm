@@ -10,17 +10,17 @@ a1, a2, . . . , an, the third one contains a sequence of integers b1, b2, . . . 
 Constraints. 1 ≤ n ≤ 10^3; -10^5 ≤ ai, bi ≤ 10^5 for all 1 ≤ i ≤ n.
 Output Format: Output the minimum possible dot product.
 '''
-def Min_DotProduct_cal(num,fs,ss):
+def Min_DotProduct_cal(fs,ss):
     MinDotPro = 0
     fs.sort()
     ss.sort(reverse=True)
-    for ind in range(num):
+    for ind in range(len(fs)):
         MinDotPro += fs[ind]*ss[ind]
     return MinDotPro
 
 num_of_num = int(input('Enter the number of your serries: '))
 first_seq = [int(x) for x in input(f'Pleas enter "{num_of_num}" number as your first sequence: ').split()]
 second_seq = [int(x) for x in input(f'Pleas enter "{num_of_num}" number as your second sequence: ').split()]
-print (Min_DotProduct_cal(num_of_num,first_seq,second_seq))    
+print (Min_DotProduct_cal(first_seq,second_seq))    
 
  

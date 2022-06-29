@@ -12,7 +12,7 @@ Constraints. 1 ≤ n ≤ 10^3, 0 ≤ W ≤ 2 · 10^6; 0 ≤ vi ≤ 2 · 10^6, 0 
 Output Format: Output the maximal value of fractions of items that fit into the knapsack. The absolute
 value of the difference between the answer of your program and the optimal value should be at most
 10^-3. To ensure this, output your answer with at least four digits after the decimal point (otherwise
-your answer, while being computed correctly, can turn out to be wrong because of rounding issues).
+your answer, while being computed correctly, can turn out to be wrong because of robunding issues).
 '''
 def knapsack_value_cal (numi,cap):
     item_counter = 0

@@ -2,7 +2,7 @@
 
 
 def fib_mod_cal(fib,m):
-    fib_list=[]
+    #fib_list=[]
     fib_remain_list = []
     num = 0
     while fib_remain_list[-2:] != [0,1] or len(fib_remain_list) < 3:
@@ -12,7 +12,7 @@ def fib_mod_cal(fib,m):
         else: 
             #fib_list.append(fib_list[num-1] + fib_list[num-2])
             #fib_remain_list.append((fib_list[num-1] + fib_list[num-2])%m)   
-            fib_remain_list.append((fib_remain_list[num-1]%m + fib_remain_list[num-2]%m)%m)       
+            fib_remain_list.append((fib_remain_list[num-1] + fib_remain_list[num-2] )%m)       
         num += 1
     Sequence_list = fib_remain_list[:-2]
     remainder_index = fib%len(Sequence_list)
